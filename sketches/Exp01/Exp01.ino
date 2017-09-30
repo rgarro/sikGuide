@@ -1,12 +1,10 @@
 /*
 Reads the capacitor voltage at digital pin 2 and turns on and off a light led at pin 12
-
-:: Electronica Hidalgo San Jose Costa Rica :::
-
+  los pines puentean la tierra , serializador de atari ...
 */
 
 const int buttonPin = 2;
-const int ledPin = 12;
+const int ledPin = 11;
 int buttonStatus = 0;
 
 
@@ -17,7 +15,7 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("go to the store and buy 10ef and 100ef capacitors");
+  Serial.println(buttonPin);
   buttonStatus = digitalRead(buttonPin);
 
   if(buttonStatus == HIGH){
