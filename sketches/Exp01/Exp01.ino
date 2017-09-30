@@ -17,10 +17,11 @@ void setup() {
 void loop() {
   Serial.println(buttonPin);
   buttonStatus = digitalRead(buttonPin);
-
-  if(buttonStatus == HIGH){
+  Serial.println("======");
+ Serial.println(buttonStatus);
+  /*if(buttonStatus == HIGH){
     digitalWrite(ledPin,HIGH);
   }else{
      digitalWrite(ledPin,LOW); 
-  }
+  }*/
 }
